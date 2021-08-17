@@ -61,6 +61,7 @@ int main(){
 {% tab title="C++" %}
 ```
 Pointer
+Array Introduction
 ```
 {% endtab %}
 
@@ -86,6 +87,33 @@ int main() {
 
     return 0;
 }
+```
+{% endtab %}
+
+{% tab title="Array Introduction " %}
+```cpp
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int size=0;
+    cin>>size;
+    
+    int arr[size];
+    int inp=0;
+    for(int i =0; i<size; i++){
+        cin>>inp;
+        arr[i]=inp;
+    }
+    for(int i =size-1; i>=0; i--){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
+
 ```
 {% endtab %}
 {% endtabs %}
