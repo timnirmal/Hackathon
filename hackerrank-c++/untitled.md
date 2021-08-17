@@ -1,7 +1,5 @@
 # Untitled
 
-## 
-
 {% tabs %}
 {% tab title="C++" %}
 ```cpp
