@@ -1,7 +1,15 @@
 # Untitled
 
-## Conditional Statements
+## 
 
+{% tabs %}
+{% tab title="C++" %}
+```cpp
+Conditional Statements
+```
+{% endtab %}
+
+{% tab title="Code" %}
 ```cpp
 #include <iostream>
 
@@ -46,6 +54,41 @@ int main(){
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="C++" %}
+```
+Pointer
+```
+{% endtab %}
+
+{% tab title="Code" %}
+```cpp
+#include <stdio.h>
+#include <math.h>
+
+void update(int *a,int *b) {
+    // Complete this function 
+    *a = *a + *b;
+    *b = (*a) - 2*(*b);  
+    *b = abs(*b); 
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+```
+{% endtab %}
+{% endtabs %}
 
 
 
