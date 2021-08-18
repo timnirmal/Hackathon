@@ -114,6 +114,43 @@ int main() {
 
 ```
 {% endtab %}
+
+{% tab title="Variable Sized Arrays" %}
+```cpp
+//Solved using Vectors
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main () {
+
+    int numRows, numOut, numElements, inp;
+    vector<vector<int>> vec;
+
+    cin>>numRows>>numOut;
+
+    for(int i=0; i<numRows; i++){
+        cin>> numElements;
+        vector<int> ivec;
+        for(int j=0; j<numElements; j++){
+            cin>>inp;
+            ivec.push_back(inp);
+        }
+        vec.push_back(ivec);
+    }
+
+    int row, column;
+
+    for(int i=0; i<numOut; i++){
+        cin>>row>>column;
+        cout<<vec[row][column]<<endl;
+    }
+    return 0;
+}
+
+```
+{% endtab %}
 {% endtabs %}
 
 
